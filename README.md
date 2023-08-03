@@ -22,8 +22,10 @@ Topics covered in Java microservices.
     - Using service discovery tools like Eureka or Consul.
     - Registering and discovering microservices dynamically.
 
-6. Load Balancing and Fault Tolerance:
+6. Load Balancing
     - Techniques for load balancing microservices.
+
+6A. Fault Tolerance
     - Implementing fault tolerance using Hystrix or similar libraries.
 
 7. Data Management in Microservices:

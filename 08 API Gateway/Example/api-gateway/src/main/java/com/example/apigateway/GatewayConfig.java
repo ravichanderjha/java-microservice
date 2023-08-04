@@ -12,6 +12,7 @@ public class GatewayConfig {
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route("order_route", r -> r.path("/order/**")
+                        .filters(f -> f.stripPrefix(1)) // Remove the prefix "/prefix"
                         .uri("lb://order-service"))
                 .build();
     }

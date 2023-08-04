@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: api-gateway-service
+  # Spring Cloud Gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+# Eureka Discovery Client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761
